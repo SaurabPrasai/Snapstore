@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
+import { Link } from "react-router-dom";
 
 export const Card = React.memo(({
   card,
@@ -48,7 +49,7 @@ export function FocusCards({ cards }) {
       {/* Single Quote at the Top */}
       <div className="text-center mb-10 px-4 max-w-3xl">
         <blockquote className="text-xl md:text-2xl font-medium font-display text-gray-700 italic">
-          "The best thing about a picture is that it never changes, even if the people in it do"
+          "The best thing about a <Link className="cursor-text" to={'/uppp'}>picture</Link>  is that it never changes, even if the people in it do"
         </blockquote>
         <p className="text-sm text-gray-500 mt-2 font-display ">— Andy Warhol</p>
       </div>
